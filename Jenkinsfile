@@ -21,6 +21,7 @@ pipeline {
                 echo 'build image'
                 echo 'tag'
                 echo 'Pust docker hub'
+                echo 'finish'
             }
         }
     }
