@@ -11,11 +11,13 @@ pipeline {
    
          stage('Docker') {
             steps {
+                echo 'Docker start'
                 // This step should not normally be used in your script. Consult the inline help for details.
                 withDockerRegistry(credentialsId: 'cred-docker-hub', url: '') { // url default https://index.docker.io/v1/
                 // some block
                 sh label: '', script: 'docker build -t tungpt55/my-web .'
                 sh label: '', script: 'docker push tungpt55/my-web'
+                echo 'Docker finish'
                 }
             }
         }
