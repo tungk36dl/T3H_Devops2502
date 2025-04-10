@@ -22,6 +22,7 @@ pipeline {
                 echo 'tag'
                 echo 'Pust docker hub'
                 echo 'finish'
+                echo 'finish 2'
             }
         }
     }
