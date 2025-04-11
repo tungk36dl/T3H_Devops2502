@@ -18,6 +18,7 @@ pipeline {
                 sh label: '', script: 'docker build -t tungpt55/my-web .'
                 sh label: '', script: 'docker push tungpt55/my-web'
                 echo 'Docker finish'
+                echo 'DONE'
                 }
             }
         }
